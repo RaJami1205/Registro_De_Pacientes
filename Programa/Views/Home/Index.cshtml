@@ -3,62 +3,82 @@
 }
 
 <body>
+    <!-- Sección para el formulario de registro -->
     <section class="form-register">
+        <!-- Título del formulario -->
         <h1>Formulario</h1>
-        <form action="Privacy" method="post" autocomplete="off">
+
+        <!-- Formulario para enviar datos del paciente -->
+        <form action="/Home/GuardarDatos" method="post" autocomplete="off">
+            <!-- Campo para ingresar el nombre del paciente -->
             <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+
+            <!-- Campo para ingresar el número de cédula del paciente -->
             <input class="controls" type="text" name="cedula" id="cedula" placeholder="Ingrese su cédula">
-            <input class="controls" type="date" name="fecha_N" id="fecha_N" placeholder="Ingrese su fecha de nacimiento">
+
+            <!-- Campo para seleccionar la fecha de nacimiento del paciente -->
+            <input class="controls" type="date" name="fecha_N" id="fecha_N">
+
+            <!-- Campo para ingresar la edad del paciente -->
             <input class="controls" type="text" name="edad" id="edad" placeholder="Ingrese su edad">
+
+            <!-- Campo para ingresar la dirección del paciente -->
             <input class="controls" type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion">
+
+            <!-- Botón para enviar el formulario -->
             <button type="submit" class="buttoms">Registrar</button>
         </form>
     </section>
 </body>
 
+<!-- Estilos CSS para la página -->
 <style>
+    /* Resetea márgenes y rellenos, y aplica box-sizing border-box para todos los elementos */
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
+    /* Estilo para el fondo del cuerpo de la página */
     body {
         background: #f9f4a7;
     }
 
+    /* Estilo para la sección del formulario de registro */
     .form-register {
-        width: 400px;
-        background: #24303c;
-        padding: 30px;
-        margin: auto;
-        margin-top: 100px;
-        border-radius: 4px;
-        font-family: Calibri;
-        color: white;
-        box-shadow: 7px 13px 37px #000;
+        width: 400px; /* Ancho del formulario */
+        background: #24303c; /* Color de fondo del formulario */
+        padding: 30px; /* Relleno interno del formulario */
+        margin: auto; /* Centra el formulario horizontalmente */
+        margin-top: 100px; /* Margen superior para separación de la parte superior de la página */
+        border-radius: 4px; /* Bordes redondeados del formulario */
+        font-family: Calibri; /* Fuente del texto en el formulario */
+        color: white; /* Color del texto en el formulario */
+        box-shadow: 7px 13px 37px #000; /* Sombra del formulario para un efecto elevado */
     }
 
+    /* Estilo para los campos de entrada del formulario */
     .controls {
-        width: 100%;
-        background: #24303c;
-        padding: 10px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-        border: 1px solid #1f53c5;
-        font-family: Calibri;
-        font-size: 18px;
-        color: white;
+        width: 100%; /* Ancho completo del campo de entrada */
+        background: #24303c; /* Color de fondo del campo de entrada */
+        padding: 10px; /* Relleno interno del campo de entrada */
+        border-radius: 4px; /* Bordes redondeados del campo de entrada */
+        margin-bottom: 16px; /* Margen inferior entre los campos de entrada */
+        border: 1px solid #1f53c5; /* Borde del campo de entrada */
+        font-family: Calibri; /* Fuente del texto en el campo de entrada */
+        font-size: 18px; /* Tamaño de la fuente en el campo de entrada */
+        color: white; /* Color del texto en el campo de entrada */
     }
 
+    /* Estilo para el botón de enviar del formulario */
     .buttoms {
-        width: 100%;
-        background: #1f53c5;
-        border: none;
-        padding: 12px;
-        color: white;
-        margin: 16px 0;
-        font-size: 18px;
+        width: 100%; /* Ancho completo del botón */
+        background: #1f53c5; /* Color de fondo del botón */
+        border: none; /* Sin borde para el botón */
+        padding: 12px; /* Relleno interno del botón */
+        color: white; /* Color del texto en el botón */
+        margin: 16px 0; /* Margen superior e inferior para el botón */
+        font-size: 18px; /* Tamaño de la fuente en el botón */
     }
-
 </style>
