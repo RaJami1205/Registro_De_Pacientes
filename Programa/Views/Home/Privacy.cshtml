@@ -3,4 +3,12 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>This page was done by Raúl Alfaro.</p>
+<div class="container">
+    <h2ListarPaciente></h2>
+    <strong>Nombre</strong>@Model.nombre<br />
+    <strong>Cedula</strong>@Model.cedula<br />
+    <strong>Fecha Nacimiento</strong>@Model.fechaNacimiento.ToString("dd/MM/yyyy")<br />
+    <strong>Edad</strong>@Model.edad<br />
+    <strong>Direccion</strong>@Model.nombre<br />
+
+</div>

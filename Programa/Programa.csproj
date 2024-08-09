@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Data\Paciente.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Data\Paciente.txt" />
+  </ItemGroup>
+
 </Project>

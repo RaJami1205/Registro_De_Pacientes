@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Programa.Models;
 using System.Diagnostics;
+using System.Reflection;
 
 namespace Programa.Controllers
 {
@@ -20,7 +21,14 @@ namespace Programa.Controllers
 
         public IActionResult Privacy()
         {
-            return View();
+            Paciente obj = new Paciente();
+            obj.nombre = Request.Form["nombre"].ToString();
+            obj.cedula = Request.Form["cedula"].ToString();
+            obj.fechaNacimiento = DateTime.Parse(Request.Form["fecha_N"]);
+            obj.edad = int.Parse(Request.Form["edad"]);
+            obj.direccion = Request.Form["direccion"].ToString();
+
+            return View(obj);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
