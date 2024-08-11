@@ -1,0 +1,23 @@
+[
+  {
+    "nombre": "Ra\u00FAl Alfaro Rodr\u00EDguez",
+    "cedula": "703200083",
+    "fechaNacimiento": "2005-11-12T00:00:00",
+    "edad": 18,
+    "direccion": "Lim\u00F3n Centro"
+  },
+  {
+    "nombre": "Diego Gonz\u00E1lez",
+    "cedula": "703200078",
+    "fechaNacimiento": "2024-08-15T00:00:00",
+    "edad": 20,
+    "direccion": "San Jos\u00E9"
+  },
+  {
+    "nombre": "Taylor",
+    "cedula": "703205569",
+    "fechaNacimiento": "2024-08-21T00:00:00",
+    "edad": 24,
+    "direccion": "Matina "
+  }
+]
